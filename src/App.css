@@ -282,4 +282,7 @@ body{
     .main__btn-submit{
         width: 20%;
     }
+    .modal-body{
+        width: 70%;
+    }
 }
