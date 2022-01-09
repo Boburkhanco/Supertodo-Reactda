@@ -89,6 +89,7 @@ body{
 }
 .modal-body{
     width: 35%;
+    min-width: 350px;
     min-height: 20vh;
     border: 1px solid #ccc;
     border-radius: 10px;
@@ -271,7 +272,7 @@ body{
     transition: .3s;
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 520px) {
     .main__list {
         width:90%
     }

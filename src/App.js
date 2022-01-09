@@ -4,10 +4,11 @@ import Content from "./Localization/content";
 
 function App(){
   // Creating Todo and Local Storage 
-  const [todo, setTodo] = useState(JSON.parse(window.localStorage.getItem( "todos")) || []);
+  const [todo, setTodo] = useState(JSON.parse(window.localStorage.getItem("todos")) || []);
 
   // Using Ref and Effect for Darkmode styles 
   const  darkModeBtn = useRef()
+  
   // Modal Settings
   const [modal, setModal] = useState(false)
   const [modal2, setModal2] = useState(false)
