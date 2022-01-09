@@ -139,11 +139,11 @@ function App(){
         </div>
 
         {/* Filtering todos  */}
-        <select className="filter-btn">
+        {/* <select className="filter-btn">
             <option>All</option>
             <option>Completed Tasks</option>
             <option>Uncompleted tasks</option>
-        </select> <br/>
+        </select> <br/> */}
 
         {/* Task Counter  */}
         <h3 className="count-title"> Barcha todolar soni {todo.length} taga yetdi.</h3>
