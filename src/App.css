@@ -1,38 +1,287 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Carter+One&family=Fugaz+One&family=Russo+One&family=Suez+One&family=Raleway:ital,wght@0,300;1,400;1,500&display=swap");
+
+
+body{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(0deg, #ccc, #000);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* filter: invert(1); */
+    align-items: center;
+}
+.mainDark{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(0deg, #ccc, #000);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    filter: invert(1);
+    align-items: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main-start{
+    width: 35%;
+    min-width: 400px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+.modal-btn{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid crimson;
+    background-color: gold;
+    color: crimson;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 700;
+    justify-self: flex-end;
+    transition: .3s;
+}
+.modal-btn:hover{
+    background-color: rgb(143, 121, 0);
+    cursor: pointer;
+    transition: .3s;
+}
+.darkmode-btn{
+    width: 56px;
+    height: 30px;
+    border-radius: 50px;
+    border: 2px solid crimson;
+    background-color: #333;
+    color: crimson;
+    display: flex;
+    transition: .3s;
+    padding: 0;
+    margin-left: 5px;
+}
+.toggler-off{
+    width: 56px;
+    height: 30px;
+    border-radius: 50px;
+    border: 2px solid crimson;
+    background-color: #333;
+    color: crimson;
+    display: flex;
+    justify-content: flex-end;
+    transition: .3s;
+    padding: 0;
+    margin-left: 5px;
+}
+.darkmode-toggler{
+    width: 22px;
+    height: 22px;
+    display: block;
+    background-color: #fff;
+    border: 2px solid black;
+    border-radius: 50%;
+    padding: 0;
+    cursor: pointer;
+    display: flex;
+}
+.modal-body{
+    width: 35%;
+    min-height: 20vh;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    transition: .3s;
+    margin-bottom: 10px;
+    margin-top: -10px;
+    color: white;
+    font-size: 18px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.filter-btn{
+    width: 150px;
+    height: 30px;
+    border: 1px solid black;
+    margin-top: 20px;
+    font-size: 14px;
+}
+.main__title{
+    margin: 0;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    border-radius: 50px;
+    color: #ff4500;
+    font-family: courier;
+    font-family: Carter One, cursive;
+    font-size: 40px;
+    margin: 0;
+    padding: 5px;
+    margin: 0 auto;
+    white-space: nowrap;
+}
+.intro{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+.main__input{
+    font-size: 18px;
+    height: 40px;
+    text-align: center;
+    text-transform: capitalize;
+    width: 24%;
+    min-width: 300px;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.main__btn-del, .main__input {
+    border: 3px solid coral;
+    border-radius: 10px;
+    font-family:Russo One, sans-serif;
+}
+.main__btn-submit{
+    border: 2px solid coral;
+    border-radius: 10px;
+    box-sizing: border-box;
+    color: coral;
+    background-color: #fff;
+    font-family: Russo One, sans-serif;
+    font-size: 26px;
+    height: 48px;
+    margin-left: 5px;
+    transition: .3s;
+    width: 10%;
+    min-width: 70px;
+}
+.main__btn-submit:hover{
+    background-color: #858585;
+    cursor: pointer;
+    transition:.2s
+}
+.main__btn-del {
+    box-sizing: border-box;
+    background-color: #fff;
+    color: coral;
+    font-size: 26px;
+    height: 44px;
+    margin-left: 5px;
+    transition: .3s;
+    width:100px;
+}
+.main__btn-del:hover {
+    background-color: #000000;
+    cursor: pointer;
+    transition:.2s
+}
+.main__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 0;
+    width: 35%;
+    min-width: 400px;
+}
+.list-item{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.main__list-item {
+    color: gold;
+    font-family: Suez One, serif;
+    font-family: Fugaz One, cursive;
+    font-size: 20px;
+    padding:10px
+}
+.count-title{
+    color: #ff4500;
+    font-family:Russo One, sans-serif;
+}
+/* .main__list-btn {
+    border: 2px solid coral;
+    border-radius: 10px;
+    box-sizing: border-box;
+    color: coral;
+    font-family: Russo One, sans-serif;
+    font-size: 16px;
+    height: 30px;
+    margin-left: 5px;
+    transition: .3s;
+    width:70px
+} */
+.main__checkbox{
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    cursor: pointer;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Delete Modal */
+.del__modal{
+    width: 24%;
+    min-width: 300px;
+    border: 2px solid #222;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    background-color: #fff;
+    position: absolute;
+    top: 40%;
+}
+.del__modal-title{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    margin: 0;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+.del__modal-btns{
+    justify-self: flex-end;
+    align-self: flex-end;
+}
+.del__cancel-btn{
+    width: 70px;
+    padding: 5px;
+    border: 1px solid #333;
+    border-radius: 10px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    transition: .3s;
+}
+.del__cancel-btn:hover, .del__ok-btn:hover{
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    transition: .3s;
+}
+.del__ok-btn{
+    width: 40px;
+    padding: 5px;
+    border: 1px solid #333;
+    border-radius: 10px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    margin-left: 10px;
+    transition: .3s;
 }
 
-.App-link {
-  color: #61dafb;
-}
+@media only screen and (max-width: 450px) {
+    .main__list {
+        width:90%
+    }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    .main__input {
+        width: 70%
+    }
+    .main__btn-submit{
+        width: 20%;
+    }
 }
